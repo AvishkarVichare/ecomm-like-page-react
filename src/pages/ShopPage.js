@@ -10,6 +10,7 @@ const ShopPage = () => {
     const f = useContext(filterContext);
     const [filterdata, setfilterdata] = useState([])
 
+   
     const { filter, setfilter } = f;
     console.log(filter)
 
@@ -27,34 +28,33 @@ const ShopPage = () => {
         else if (filter === 'high' || filter === 'low') {
             let newArr = [];
             if (filter === 'low') {
-                newArr= filterdata.sort((a,b)=>{return b.price-a.price})
+                newArr= filterdata.sort((a,b)=>{return a.price-b.price})
                  
-                setfilterdata(newArr)
+                setfilterdata([...newArr])
                 // console.log("new arr "+JSON.stringify(newArr))
                 // console.log("running")
 
             }
             else{
-                filterdata.sort((a,b)=>{return a.price-b.price})
+                filterdata.sort((a,b)=>{return b.price-a.price})
                 newArr = filterdata
-                setfilterdata(newArr)
+                setfilterdata([...newArr])
 
             }
         }
-        // for prices low and high
         else {
             setfilterdata(handleFilterForType())
           
         }
 
-    }, [filterdata,filter])
+    }, [filter])
 
     // console.log("this is " + filterdata)
 
     return (
         <div className='px-12'>
             
-            <Filter />
+            <Filter  />
             <div className='flex flex-wrap'>
                 {filterdata.map((e, index) => {
                     return (
