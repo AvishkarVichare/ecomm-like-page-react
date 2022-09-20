@@ -7,6 +7,7 @@ const Navbar = () => {
   const cart = useContext(cartInfoContext);
   const {carInfo, setcarInfo} = cart;
 
+  console.log(carInfo)
   return (
     <div className='bg-[#121920] flex px-12 py-5 justify-between'>
         <div>
@@ -14,7 +15,7 @@ const Navbar = () => {
         </div>
 
         <div className='text-gray-300'>
-          {carInfo} Items in Cart
+          {carInfo.length} Items in Cart
         </div>
 
     </div>

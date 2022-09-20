@@ -23,7 +23,7 @@ const ShopPage = () => {
         }
 
         if (filter === 'all') {
-            setfilterdata(data)
+            setfilterdata(data);
         }
         else if (filter === 'high' || filter === 'low') {
             let newArr = [];
@@ -56,10 +56,10 @@ const ShopPage = () => {
             
             <Filter  />
             <div className='flex flex-wrap'>
-                {filterdata.map((e, index) => {
+                {filterdata.map((e) => {
                     return (
                      
-                        <Card key={index} img={e.img} name={e.name} price={e.price} />
+                        <Card key={e.id} img={e.img} name={e.name} price={e.price} product={e} />
                        
                     )
                 })}
