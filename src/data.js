@@ -46,13 +46,13 @@ const data = [
         name:'Naruto gara Oversized t-shirt',
         type:'tshirt',
         price:600,
-        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3qeKL8xvJd34ZW0I-Gs_c80KEdQWI28IP9A&usqp=CAU'
+        img:'https://cdn.shopify.com/s/files/1/0013/1930/5315/products/gtfb1_1445x.jpg?v=1653645584'
     },
     {
         name:'Itachi Oversized t-shirt',
         type:'tshirt',
         price:900,
-        img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3qeKL8xvJd34ZW0I-Gs_c80KEdQWI28IP9A&usqp=CAU'
+        img:'https://lzd-img-global.slatic.net/g/p/12de389b826e277ef089fa105d6b07ce.jpg_720x720q80.jpg_.webp'
     },
     {
         name:'Jeans Men',
