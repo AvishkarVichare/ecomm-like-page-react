@@ -10,9 +10,9 @@ const Card = (props) => {
 
     const handleAddCart = ()=>{
       
-      const cart = [...carInfo];
-      cart.push(product)
-      setcarInfo(cart)
+      const ourCart = [...carInfo];
+      ourCart.push(product)
+      setcarInfo(ourCart)
 
     }
     const handleRemove = ()=>{

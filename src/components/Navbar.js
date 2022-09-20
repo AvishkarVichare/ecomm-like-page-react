@@ -15,7 +15,10 @@ const Navbar = () => {
         </div>
 
         <div className='text-gray-300'>
-          {carInfo.length} Items in Cart
+          <span>
+          {carInfo.length} {carInfo.length<=1?(<>Item</>):(<>Items</>)} in Cart
+          </span>
+        
         </div>
 
     </div>

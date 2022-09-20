@@ -11,7 +11,7 @@ const Filter = () => {
   }
 
   return (
-    <div className='my-5'>
+    <div className='my-5 border-b-2 border-black w-full'>
       {/* type  */}
       <label className='font-extrabold' htmlFor="filter">Filter:</label>
       <select className='border-2 border-black px-2 py-1 rounded-xl mx-3' onChange={handleOnchange} name="filter" id="filter">

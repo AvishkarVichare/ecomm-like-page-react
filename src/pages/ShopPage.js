@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import Card from '../components/Card'
+import CheckoutCard from '../components/CheckoutCard'
 import Filter from '../components/Filter'
 import filterContext from '../context/filter/filterContext'
 import data from '../data'
@@ -55,7 +56,10 @@ const ShopPage = () => {
         <div className='px-12'>
             
             <Filter  />
-            <div className='flex flex-wrap'>
+
+            <div className='flex'>
+
+            <div className='flex flex-wrap w-[80%]'>
                 {filterdata.map((e) => {
                     return (
                      
@@ -64,6 +68,17 @@ const ShopPage = () => {
                     )
                 })}
             </div>
+
+            <div className='w-[20%] border-l-2 border-gray-300 pl-5'>
+
+            <CheckoutCard/>
+            <button className='bg-[#efbc43] text-[#1f1f1f] p-2 rounded-xl font-bold w-full mx-auto'>Check Out</button>
+
+            </div>
+
+
+            </div>
+
         </div>
 
     )
